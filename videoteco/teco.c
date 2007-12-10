@@ -1,5 +1,5 @@
 char *teco_c_version = "teco.c: $Revision$";
-char *copyright = "Copyright (c) 1985-2003 Paul Cantrell & Joyce Nishinaga";
+char *copyright = "Copyright (c) 1985-2007 Paul Cantrell";
 
 /*
  * $Date$
@@ -11,20 +11,21 @@ char *copyright = "Copyright (c) 1985-2003 Paul Cantrell & Joyce Nishinaga";
 /* teco.c
  * Main TECO entry point with most of the initialization code
  *
- *                     COPYRIGHT (c) 1985-2003 BY
- *		     PAUL CANTRELL & J. M. NISHINAGA
- *                         SUDBURY, MA 01776
- *                        ALL RIGHTS RESERVED
  *
- * This software is furnished in it's current state free of  charge.
- * The   authors   reserve  all  rights  to  the  software.  Further
- * distribution of the software is not authorized. Modifications  to
- * the  software  may  be made locally, but shall not be distributed
- * without the consent of the authors. This software  or  any  other
- * copies  thereof,  may not be provided or otherwise made available
- * to anyone without express permission of the authors. Title to and
- * ownership of this software remains with the authors.
- * 
+ *                     Copyright (C) 1985-2007 BY Paul Cantrell
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "teco.h"
