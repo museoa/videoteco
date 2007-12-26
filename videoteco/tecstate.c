@@ -44,9 +44,7 @@ char *tecstate_c_version = "tecstate.c: $Revision$";
  *	to the state we left before.
  */
 void
-parse_input_character(ct,uct)
-register struct cmd_token *ct;
-struct cmd_token *uct;
+parse_input_character( struct cmd_token *ct, struct cmd_token *uct )
 {
 char tmp_message[LINE_BUFFER_SIZE];
 register struct cmd_token *oct = NULL;
@@ -631,8 +629,12 @@ register struct cmd_token *oct = NULL;
  */
 		case '?':
 		    trace_mode_flag = !trace_mode_flag;
-		    screen_message(trace_mode_flag ? "Trace Mode ON" :
-							"Trace Mode OFF");
+			{
+				char traceString[ 64 ];
+				if( trace_mode_flag ) strcpy( traceString, "Trace Mode ON" );
+				else strcpy( traceString, "Trace Mode OFF" );
+			    screen_message( traceString );
+			}
 		    ct->ctx.state = STATE_C_INITIALSTATE;
 		    return;
 
@@ -2348,9 +2350,7 @@ register struct cmd_token *oct = NULL;
  *	not have got around to that yet.
  */
 int
-parse_check_qname(ct,name)
-register struct cmd_token *ct;
-register char name;
+parse_check_qname( struct cmd_token *ct, char name )
 {
 char tmp_message[LINE_BUFFER_SIZE];
 
