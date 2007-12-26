@@ -87,7 +87,7 @@ unsigned int hash = stringHash( name );
 	    continue;
 	}
 
-	printf("hash match! %s %s\n",name,bp->name);
+//	printf("hash match! %s %s\n",name,bp->name);
 /*
  * This loop implements the equivalent of strcmp, except that in the
  * case of VMS, it is case insensitive.
